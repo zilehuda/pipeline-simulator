@@ -1,0 +1,196 @@
+<HTML>
+<HEAD>
+<SCRIPT LANGUAGE="JavaScript" SRC="top.js">
+</SCRIPT>
+<style>
+
+body {
+	background: beige;
+}
+img
+{
+	float: right;
+	width: 150px;
+	margin-right: 25px;
+}
+h2 {
+	margin-left: 40%;
+}
+</style>
+</HEAD>
+
+<BODY class="main" onLoad="Page_Load_Complete();" >
+	<h2>CA PROJECT</h2>
+	<table border="0" align="left">
+		<tr>
+
+		<td rowspan="3">
+		<form  style="margin-bottom:0; margin-left:20px;">
+		<table border="1" valign="middle">
+			<tr align="center">
+			<td>
+			Group Members
+			</td>
+
+			</tr>
+
+			<tr align="center">
+			<td>
+			Zilehuda Tariq
+			</td>
+
+			</tr>
+
+			<tr align="center">
+			<td>
+			Abdul Ahad
+			</td>
+			</tr>
+
+			<tr align="center">
+			<td>
+			Pawan Kumar
+			</td>
+
+			</tr>
+
+
+		</table>
+		</form>
+		</td>
+
+
+		</tr>
+
+	</table>
+	<img src="logo.png" alt="">
+
+<table border="0" align="center">
+	<tr>
+
+	<td rowspan="3">
+	<form name="execution_time_table" style="margin-bottom:0;">
+	<table border="1" valign="middle">
+		<tr align="center">
+		<td>
+		Instruction
+		</td>
+
+		</tr>
+
+		<tr align="center">
+		<td>
+		FP_Add/Sub
+		</td>
+
+		</tr>
+
+		<tr align="center">
+		<td>
+		FP_Multiply
+		</td>
+		</tr>
+
+		<tr align="center">
+		<td>
+		FP_Divide
+		</td>
+
+		</tr>
+
+		<tr align="center">
+		<td>
+		INT_Divide
+		</td>
+
+		</tr>
+	</table>
+	</form>
+	</td>
+
+	<td width="10%" rowspan="3">
+	&nbsp;
+	</td>
+
+
+	<td valign="middle" align="right">
+	<form name="insert_instruction_table">
+	<table align="right" border="0" width="100%">
+		<tr>
+		<td>
+		<select name="operator" onChange="Change_Add_Instruction();">
+		<option value="fp_add">ADD
+		<option value="fp_sub">Subtract
+		<option value="fp_mult">Multiply
+		<option value="fp_ld">Load
+		<option value="fp_sd">Store
+		<option value="br_taken">Taken
+		<option value="br_untaken">Untaken
+		</select>
+		</td>
+
+		<td>
+		<select name="destination_register">
+		</select>
+		</td>
+
+		<td>
+		<select name="source_register1">
+		</select>
+		</td>
+
+		<td>
+		<select name="source_register2">
+		</select>
+		</td>
+		<td align="right">
+		<input type="button" width="185" value="   Insert Instruction    " onClick="Instruction_Insert();">
+		</td>
+		</tr>
+	</table>
+	</form>
+	</td>
+
+	<td width="10%" rowspan="3">
+	&nbsp;
+	</td>
+
+	</tr>
+
+	<tr>
+	<td align="right" valign="middle">
+	<form name="forwarding_form">
+	<table width="100%" align="right" border="0">
+		<tr>
+		<td align="center">
+		<input name="enabled_checkbox" type="checkbox" onClick="UpdateDisplay();">
+		Data Forwarding
+		</td>
+		<td align="right">
+		<input type="button" width="185" value="Remove Instruction" onClick="RemoveLastInstruction();">
+		</td>
+		</tr>
+	</table>
+	</form>
+	</td>
+	</tr>
+
+	<tr>
+	<td valign="middle" align="right">
+	<form>
+	<table width="100%" align="right" border="0">
+		<tr>
+		<td align="center">
+		<input type="button" value="Help" onClick="OpenHelp();">
+		</td>
+		</tr>
+	</table>
+	</form>
+	</td>
+	</tr>
+
+
+</table>
+
+</BODY>
+</HTML>
